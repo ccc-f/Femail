@@ -10,6 +10,14 @@
 
 ## 使用方法
 
+>   建议：
+>
+>   批量验证前请先随意测试一个一定不存的目标邮箱
+>
+>   eg：
+>
+>   python femail.py -c bucunzai@target.xyz
+
 单个email验证：
 
 ```
@@ -18,11 +26,25 @@ python femail.py -c xxx@abc.com
 
 批量验证邮箱有效性：
 
+>   emails.txt 的格式如下
+>
+>   xxx@abc.xyz
+>
+>   fadfd@abc.xyz
+>
+>   fdaff@qq.com
+
 ```
 python femail.py -v -f emails.txt
 ```
 
 批量枚举有效邮箱：
+
+>   burpemails.txt 的字典格式如下
+>
+>   chenmei
+>   chenmin
+>   chenming
 
 ```
 python femail.py -b -d 163.com -f burpemails.txt
